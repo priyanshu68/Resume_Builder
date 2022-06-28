@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    margin-left: 575px;
+}
+
+.btnNext {
+    margin-left: 25px;
+}
+
+body {
+    background-image: url(C:\Users\Priyanshu\Desktop\resume_builder\backgroun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#btnNext2 {
+    margin-left: 35px;
+}
+
+#cv-form {
+    display: none;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 200px;
+}
+
+ul {
+    margin-left: 160px;
+    color: white;
+}
+
+.back {
+    background-color: rgb(79, 78, 78);
+}
+
+hr {
+    color: white;
+    margin-left: 40px;
+}

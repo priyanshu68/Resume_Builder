@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jacques Francois' rel='stylesheet'>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container-fulid" id="cv-form">
+        <!-- navbar -->
+        <div class="container-fulid ">
+            <nav class="navbar navbar-light bg-primary justify-content-center">
+                <span class="navbar-brand mb-0 h1"><h2 class="text-light">Resume Generator</h2></span>
+            </nav>
+        </div>
+
+        <div class="container">
+            <!-- work experience section -->
+            <h5 class="text-center mt-2">Work Experience</h5>
+            <div class="row">
+                <div class="col-md-12 mt-4">
+                    <div class="form-group" id="we">
+                        <label for="workField">Work Experience :</label>
+                        <textarea type="text" id="workField" placeholder="Work Experience" class="form-control weField" rows="3"></textarea>
+
+                        <div class="container mt-4 text-center" id="weAddButton">
+                            <button onclick="addNewWeField()" class="btn btn-primary btn-m">Add</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- project section -->
+            <div class="row mt-4">
+                <h5 class="text-center ">Projects</h5>
+                <div class="col-md-6 mt-4">
+                    <p class="text-secondary text-center">Project 1</p>
+                    <div class="form-group">
+                        <label for="topicField">Topic :</label>
+                        <input type="text" id="topicField" placeholder="Project Topic" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="workField">About Project :</label>
+                        <textarea type="text" id="workField" placeholder="About" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p class="text-secondary text-center">Project 2</p>
+                    <div class="form-group">
+                        <label for="topicField">Topic :</label>
+                        <input type="text" id="topicField" placeholder="Project Topic" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="workField">About Project :</label>
+                        <textarea type="text" id="workField" placeholder="About" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <p class="text-secondary text-center">Project 3</p>
+                    <div class="form-group">
+                        <label for="topicField">Topic :</label>
+                        <input type="text" id="topicField" placeholder="Project Topic" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="workField">About Project :</label>
+                        <textarea type="text" id="workField" placeholder="About" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <p class="text-secondary text-center">Project 4</p>
+                    <div class="form-group">
+                        <label for="topicField">Topic :</label>
+                        <input type="text" id="topicField" placeholder="Project Topic" class="form-control">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="workField">About Project :</label>
+                        <textarea type="text" id="workField" placeholder="About" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills and interest -->
+            <div class="row my-5 justify-content-between" id="skillz">
+                <h4 class="text-center">Skills and Interest</h4>
+                <div class="form-group col-md-2 mt-3">
+                    <label for="skillField">Skill 1:</label>
+                    <input type="text" class="form-control" id="skillFieldZip" placeholder="Web development">
+                </div>
+                <div class="form-group col-md-2 mt-3">
+                    <label for="skillFieldZip">Skill 2:</label>
+                    <input type="text" class="form-control" id="skillField" placeholder="react.js">
+                </div>
+                <div class="form-group col-md-2 mt-3">
+                    <label for="skillField">Skill 3:</label>
+                    <input type="text" class="form-control" id="skillField" placeholder="python">
+                </div>
+                <div class="form-group col-md-2 mt-3">
+                    <label for="skillField">Skill 4:</label>
+                    <input type="text" class="form-control" id="skillField" placeholder="Javascript">
+                </div>
+                <div class="form-group col-md-2 mt-3">
+                    <label for="skillField" class="labelField">Skill 4:</label>
+                    <input type="text" class="form-control sfiled" id="skillField" placeholder="Sql">
+                </div>
+                <div class="container mt-4 text-center" id="weAddSkill">
+                    <button onclick="addNewSkill()" class="btn btn-primary btn-m">Add</button>
+                </div>
+            </div>
+            <div class="row justify-content-between" id="Interestz">
+                <div class="form-group col-md-2 mt-2">
+                    <label for="skillField">Interest 1:</label>
+                    <input type="text" class="form-control" id="skillFieldZip" placeholder="Web development">
+                </div>
+                <div class="form-group col-md-2 mt-2">
+                    <label for="skillField">Interest 2:</label>
+                    <input type="text" class="form-control" id="skillFieldZip" placeholder="Hackothrons">
+                </div>
+                <div class="form-group col-md-2 mt-2">
+                    <label for="skillField">Interest 3:</label>
+                    <input type="text" class="form-control" id="skillFieldZip" placeholder="coding">
+                </div>
+                <div class="form-group col-md-2 mt-2">
+                    <label for="skillField">Interest 4:</label>
+                    <input type="text" class="form-control" id="skillFieldZip" placeholder="public speaking">
+                </div>
+                <div class="form-group col-md-2 mt-2">
+                    <label for="skillField">Interest 5:</label>
+                    <input type="text" class="form-control iField" id="skillFieldZip" placeholder="debates">
+                </div>
+                <div class="container mt-4 text-center" id="weAddInterest">
+                    <button onclick="addNewInterest()" class="btn btn-primary btn-m">Add</button>
+                </div>
+
+            </div>
+            <div class="row-auto my-5 justify-content-around buttons">
+                <button onclick="personal()" class="btn btn-primary">  Back  </button>
+                <button class="btn btn-secondary btn-m" id="btnNext2">Generate</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="conatiner-fulid">
+        <div class="row">
+            <!-- first section -->
+            <div class="col-md-4 py-4 back">
+                <img src="PinClipart.com_prediction-clipart_3553881.png" class="img-fluid mx-auto d-block profile" alt="">
+                <div class="nameField">
+                    <p class="text-light text-center mt-2">Priyanshu Mohanty</p>
+                    <p class="text-light text-center number">+91865579 56597, +91 85697 56655</p>
+
+                </div>
+
+                <div class="container mt-5 skilltab">
+                    <h4 class="text-center text-light">Skills</h4>
+                    <ul class="skills">
+                        <li>Bootstrap</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Sql</li>
+                    </ul>
+                </div>
+                <div class="container text-center">
+                    <hr style="width:350px;border-width:3px;color:whitesmoke;background-color:white">
+                </div>
+
+                <div class="container">
+                    <h5 class="text-center text-light"> Website and Social Links</h5>
+                    <ul class="link">
+                        <li>https://github.com/prisha68</li>
+                        <li>https://github.com/prisha68</li>
+                        <li>https://github.com/prisha68</li>
+                        <li>https://github.com/prisha68</li>
+                        <li>https://github.com/prisha68</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- second section -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6 details">
+                        <h5 class="m-4">PRIYANSHU MOHANTY</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-end mt-4">
+                            Dehrdun,sector 5,New Delhi
+                        </p>
+                        <p class="text-end">+91 8974 59974,+91 89795 5891</p>
+                        <p class="text-end">p.singh@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

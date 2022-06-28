@@ -1,0 +1,26 @@
+h5,
+h4 {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    ;
+}
+
+.number {
+    margin-top: -18px;
+}
+
+.skills,
+.link {
+    font-family: 'Jacques Francois';
+    font-size: 19px;
+    margin-top: -5px;
+}
+
+.link {
+    margin-left: 100px;
+}
+
+p {
+    font-family: 'Jacques Francois';
+    font-size: 17px;
+}

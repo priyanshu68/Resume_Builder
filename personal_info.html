@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="background">
+        <!-- navbar -->
+        <div class="container-fulid ">
+            <nav class="navbar navbar-light bg-primary justify-content-center">
+                <span class="navbar-brand mb-0 h1"><h2 class="text-light">Resume Generator</h2></span>
+            </nav>
+        </div>
+        <div class="container background">
+            <div class="row mt-3">
+
+                <h4 class="text-center my-2">Personal Information:</h4>
+                <!-- Basic details section -->
+                <div class="col-md-6 mt-3 text-start">
+                    <h6 class="text-dark text-left">Basic Details:</h6>
+                    <div class="form-group">
+                        <label for="firstField">First Name </label>
+                        <input type="text" id="firstField" placeholder="Prisha" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="lastField">Last Name</label>
+                        <input type="text" id="lastField" placeholder="Singh" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="contactField">Phone Number </label>
+                        <input type="text" id="contactField" placeholder="+91 1234 568974" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="addressField">Address </label>
+                        <textarea type="text" id="addressField" placeholder="Plot No. 50B, Kautilya Marg, Chanakyapuri, New Delhi, Delhi 110021" class="form-control" rows="3"></textarea>
+                    </div>
+
+                </div>
+                <!-- social media section -->
+                <div class="col-md-6 mt-3 text-start ">
+                    <h6 class="text-dark text-left">Social media:</h6>
+                    <div class="form-group">
+                        <label for="gitField">Github </label>
+                        <input type="text" id="gitField" placeholder="https://github.com/prisha68" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="twitterField">LinkedIn</label>
+                        <input type="text" id="twitterField" placeholder="https://www.linkedin.com/in/prisha-singh-9543b4620/" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="instagramField">Instagram</label>
+                        <input type="text" id="instagramField" placeholder="https://www.instagram.com/prisha_singh/" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="mailField">Email address </label>
+                        <textarea type="text" id="mailField" placeholder="e.g. p.singh@gmail.com" class="form-control" rows="3"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- education section -->
+            <div class="row mt-4 education">
+                <h4 class="text-center my-2">Education:</h4>
+                <div class="col-md-6 mt-3">
+                    <div class="form-group">
+                        <label for="schoolField">Higher secondary School Name</label>
+                        <input type="text" id="schoolField" placeholder="e.g. St.Xavier's High School" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="schoolField">Percentage</label>
+                        <input type="text" id="schoolField" placeholder="88%" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="schoolField">College Name</label>
+                        <input type="text" id="schoolField" placeholder="Xavier's College Of Management" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="schoolField">Qualification</label>
+                        <input type="text" id="schoolField" placeholder="Bachelor's Degree in Computer Science" class="form-control" />
+                    </div>
+
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="form-group">
+                        <label for="schoolField">School Location</label>
+                        <input type="text" id="schoolField" placeholder="Hydrabad" class="form-control" />
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <label for="dateField">Year of Graduation</label>
+                    </div>
+                    <div class="input-group w-75">
+                        <input type="text" id="dateField" class="form-control" placeholder="2019">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group mt-2">
+                        <label for="schoolField">College Location</label>
+                        <input type="text" id="schoolField" placeholder="Bhubaneswar" class="form-control" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="schoolField">Year of graducation</label>
+                    </div>
+                    <div class="input-group w-75">
+                        <input type="text" id="dateField" class="form-control" placeholder="2024">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-calendar fa-"></i></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row my-5 text-left">
+                <h3>About me:</h3>
+                <div class="container">
+                    <div class="form-group mt-2">
+                        <textarea type="text" id="aboutField" class="form-control" placeholder="About me" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row-auto my-5 justify-content-around buttons">
+                <button class="btn btn-secondary disabled">Back</button>
+                <button onclick="workExperience()" class="btn btn-primary btnNext">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
